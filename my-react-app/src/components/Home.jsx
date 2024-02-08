@@ -1,25 +1,14 @@
 import React from 'react';
 import './Home.css';
 import AsaImage from './Asa.jpg'; // Import the image
-import { useEffect } from 'react';
+import { GitHub, LinkedIn, WhatsApp, Instagram } from '@mui/icons-material';
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 
 
 
 const Home = () => {
-
-    useEffect(() => {
-      // Add Material Icons stylesheet dynamically
-      const link = document.createElement('link');
-      link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
-      link.rel = 'stylesheet';
-      document.head.appendChild(link);
-  
-      // Clean up function to remove the added link when the component unmounts
-      return () => {
-        document.head.removeChild(link);
-      };
-    }, []);
   return (
     <div className='home-container' style={{backgroundImage: `url(${AsaImage})`}}>
       <div className="overlay"></div>
@@ -39,9 +28,9 @@ const Home = () => {
       {/* Social Links */}
       <div className="social-links">
         <a href="#" className="github"><i className="material-icons">github</i></a>
-        <a href="#" className="linkedin"><i className="material-icons">LinkedIn</i></a>
-        <a href="#" className="whatsapp"><i className="material-icons">WhatsApp</i></a>
-        <a href="#" className="instagram"><i className="material-icons">Instagram</i></a>
+        <a href="#" className="linkedin"><i className="material-icons">linkedIn</i></a>
+        <FaWhatsapp />
+        <FaInstagram />
       </div>
     </div>
   );
