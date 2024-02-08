@@ -68,5 +68,35 @@
   .social-links a.active {
     color: #00f;
   }
+  .social-links {
+    width: 200px; /* Adjust width as needed */
+    height: 244px 
+  }
+  
+  .social-links a {
+    color: #333; /* Default color */
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  /* Additional styles for specific icons or classes */
+  .github:hover {
+    color: #211F1F; /* Change color for GitHub icon on hover */
+  }
+  
+  .linkedin:hover {
+    color: #0077b5; /* Change color for LinkedIn icon on hover */
+  }
+  
+  .whatsapp:hover {
+    color: #25d366; /* Change color for WhatsApp icon on hover */
+  }
+  
+  .instagram:hover {
+    color: #e4405f; /* Change color for Instagram icon on hover */
+  }
   
   
