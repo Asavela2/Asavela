@@ -5,6 +5,7 @@
     justify-content: center;
     height: 100vh;
     background-color: #f0f0f0;
+    
   }
   
   .overlay {
@@ -19,33 +20,43 @@
 
   .text-zone {
     text-align: center;
-    color: hotpink;
+    color: rgb(12, 26, 219);
+    margin-left: -800px;
+    margin-top: 150px;
   }
   
-  .navbar {
-    margin-top: 20px;
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-size: 20px;
-  }
-  
-  .navbar ul li a.active {
-    font-weight: bold;
-  }
+.navbar {
+  margin-top: 20px;
+  margin-left: -800px;
+  margin-top: 5px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px; 
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar ul li a.active {
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #ffc107; /* Color of the links on hover */
+}
+
 
 /* Style for the social links container */
 .social-links {
@@ -53,6 +64,8 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    margin-left: -400px;
+
   }
   
   /* Style for individual social link icons */
@@ -69,34 +82,34 @@
     color: #00f;
   }
   .social-links {
-    width: 200px; /* Adjust width as needed */
+    width: 200px; 
     height: 244px 
   }
   
   .social-links a {
     color: #333; /* Default color */
-    font-size: 24px; /* Adjust icon size as needed */
+    font-size: 24px; 
   }
   
   .social-links a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff; 
   }
   
   /* Additional styles for specific icons or classes */
   .github:hover {
-    color: #211F1F; /* Change color for GitHub icon on hover */
+    color: #211F1F; 
   }
   
   .linkedin:hover {
-    color: #0077b5; /* Change color for LinkedIn icon on hover */
+    color: #0077b5; 
   }
   
   .whatsapp:hover {
-    color: #25d366; /* Change color for WhatsApp icon on hover */
+    color: #25d366;
   }
   
   .instagram:hover {
-    color: #e4405f; /* Change color for Instagram icon on hover */
+    color: #e4405f;
   }
 
   .button {
@@ -115,6 +128,7 @@
     border-radius: 0.45em;
     font-family: "Arial";
     transition: background 0.3s;
+    margin-top: 100px;
   }
   
   .button::before {
@@ -208,6 +222,5 @@
   .button:hover:before {
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
   }
-  
   
   

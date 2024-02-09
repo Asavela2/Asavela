@@ -1,0 +1,10 @@
+/* about.css */
+.progress-bar {
+    background-color: #007bff; /* Change progress bar color */
+    height: 20px; /* Adjust progress bar height */
+  }
+  
+  .progress {
+    margin-bottom: 20px; /* Add some space between progress bars */
+  }
+  
