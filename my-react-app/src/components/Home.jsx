@@ -18,7 +18,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='home-container' style={{backgroundImage: `url(${AsaImage})`}}>
+    <div className='home-container' style={{backgroundImage: `url(${AsaImage}) `}}>
       <div className="overlay"></div>
       <div className="text-zone">
         <h1>HI, I am Asavela Mgidi</h1>
