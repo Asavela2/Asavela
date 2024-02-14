@@ -4,7 +4,8 @@ import './Contact.css';
 const Contact = () => {
     return (
         <section id="Contact" className="contact-mf sect-pt4 route">
-            <h5 className="title-left">Contact me</h5>
+            <h2 className="title-left">Contact me</h2>
+            <h1 className="title-left">Get In Touch</h1>
               <form className="form">
             <div className="flex">
                 <label>

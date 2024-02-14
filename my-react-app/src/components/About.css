@@ -1,7 +1,14 @@
-.about-img .img {
-  width: 50%;
-  max-width: 50%;
-  height: auto;
+.about-img {
+  float: left; /* Align the image to the left */
+  margin-right: 20px; /* Create space between the image and any adjacent content */
+}
+
+.about-img img {
+  width: 150px; /* Set the width of the image */
+  height: 200px; /* Set the height of the image */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-radius: 8px; /* Apply rounded corners to the image */
+  box-shadow: 0 4px 6px rgba(238, 20, 154, 0.911); /* Add a subtle shadow effect */
 }
 
 .lead {
@@ -13,25 +20,17 @@
   border-radius: 5px; /* Add border-radius for rounded corners */
   background-color: #f9f9f9; /* Add a light background color */
   box-shadow: 0 2px 5px rgba(238, 20, 154, 0.911); /* Add a subtle shadow */
-}
-
-
-/* about.css */
-.progress-border {
-  display: grid;
-  grid-template-columns: 200px auto;
-  border-style: solid;
-  border-color: black;
+  margin-right: 20px;
+ 
 }
 
 .progress-bar {
     background-color: #9f37b9; /* Change progress bar color */
-    height: 10px; /* Adjust progress bar height */
-    width: 30%;
+    height: 1.2rem; /* Adjust progress bar height */
   }
   
   .progress {
-    margin-bottom: 10px; /* Add some space between progress bars */
+    background-color: #3e159e;
   }
   .about-me {
     display: flex;
@@ -58,7 +57,7 @@
     justify-content: center;
   }
   
-  .title-box-2 h5 {
+  .title-box-2 h2 {
     text-align: center;
     font-size: 2rem;
     color: #6d0f4d;
@@ -101,8 +100,19 @@
     margin-right: 10px; 
     color: #3e159e;
   }
-  
-  
-  
-  
+  .skill-mf {
+    position: relative;
+    left: 5rem;
+    width: 40rem;
+  }
+  .skill-title {
+    position: relative;
+    right: 20rem;
+    top: 1.3rem;
+  }
+  .pull-right{
+    position: relative;
+    left: 17rem;
+    top: 1.5rem;
+  }
   

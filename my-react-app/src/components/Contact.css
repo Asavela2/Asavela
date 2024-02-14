@@ -1,3 +1,10 @@
+.title-left {
+  font-size: 24px; /* Adjust the font size for h2 */
+}
+
+.title-left:first-child {
+  font-size: 2px; /* Adjust the font size for h1 */
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -7,6 +14,8 @@
     padding: 20px;
     border-radius: 10px;
     position: relative;
+    left: 50rem;
+    bottom: 1.5rem;
     
   }
   
@@ -55,7 +64,7 @@
   }
   
   .form label .input:valid + span {
-    color: green;
+    color: rgb(230, 20, 154);
   }
   
   .input01 {

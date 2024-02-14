@@ -1,14 +1,14 @@
 import React from 'react';
 import './About.css';
-import AsavelaImage from './components/Asavela.jpg'; // Import the image
+import AsavelaImage from '../components/Asavela.jpg'; // Import the image
 
 const About = () => {
   return (
     <section id="about" className="about-mf sect-pt4 route">
       <div className="container">
-        <h5 className="title-left">
+        <h2 className="title-left">
           About me
-        </h5>
+        </h2>
         <div className="row">
           <div className="col-md-6">
             <div className="about-img">
@@ -45,42 +45,42 @@ const About = () => {
                 <div className="skill">
                   <span className="skill-title">HTML</span> <span className="pull-right">85%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '50%' }} data-progress="85%"></div>
+                    <div className="progress-bar" style={{ width: '85%' }} data-progress="85%"></div>
                   </div>
                 </div>
 
                 <div className="skill">
                   <span className="skill-title">CSS</span> <span className="pull-right">75%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '45%' }} data-progress="75%"></div>
+                    <div className="progress-bar" style={{ width: '75%' }} data-progress="75%"></div>
                   </div>
                 </div>
 
                 <div className="skill">
-                  <span className="skill-title">JavaScript</span> <span className="pull-right">75%</span>
+                  <span className="skill-title">JavaScript</span> <span className="pull-right">60%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '45%' }} data-progress="75%"></div>
+                    <div className="progress-bar" style={{ width: '60%' }} data-progress="60%"></div>
                   </div>
                 </div>
 
                 <div className="skill">
-                  <span className="skill-title">Java</span> <span className="pull-right">75%</span>
+                  <span className="skill-title">Java</span> <span className="pull-right">60%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '45%' }} data-progress="75%"></div>
+                    <div className="progress-bar" style={{ width: '60%' }} data-progress="60%"></div>
                   </div>
                 </div>
 
                 <div className="skill">
-                  <span className="skill-title">Python</span> <span className="pull-right">75%</span>
+                  <span className="skill-title">Python</span> <span className="pull-right">65%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '45%' }} data-progress="75%"></div>
+                    <div className="progress-bar" style={{ width: '65%' }} data-progress="65%"></div>
                   </div>
                 </div>
 
                 <div className="skill">
                   <span className="skill-title">Figma</span> <span className="pull-right">75%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '45%' }} data-progress="75%"></div>
+                    <div className="progress-bar" style={{ width: '75%' }} data-progress="75%"></div>
                   </div>
                 </div>
               </div>
