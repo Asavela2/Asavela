@@ -3,7 +3,7 @@
 }
 
 .title-left:first-child {
-  font-size: 2px; /* Adjust the font size for h1 */
+  font-size: 2vpx; /* Adjust the font size for h1 */
 }
 .form {
     display: flex;
@@ -21,7 +21,7 @@
   
   .message {
     color: rgba(88, 87, 87, 0.822);
-    font-size: 14px;
+    font-size: 20px;
   }
   
   .flex {
