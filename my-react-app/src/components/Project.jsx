@@ -8,7 +8,12 @@ const Project = () => {
             <div className="card">
                 {/* Add your card content here */}
             </div>
-            <div className="card-1"></div> 
+            <div className="card-1">
+                
+            </div> 
+            <div className="card-2">
+                
+            </div> 
         </div>
     );
 }

@@ -6,9 +6,8 @@ const About = () => {
   return (
     <section id="about" className="about-mf sect-pt4 route">
       <div className="container">
-        <h2 className="title-left">
-          About me
-        </h2>
+        <h2 className="title-left">About</h2>
+        <h2 className="learn">Learn more about me</h2>
         <div className="row">
           <div className="col-md-6">
             <div className="about-img">
@@ -18,22 +17,22 @@ const About = () => {
           <div className="col-md-6">
             <div className="box-shadow-full">
               <div className="about-me pt-4 pt-md-0">
-                <div className="title-box-2"></div>
-                <div className="container">
+                <div className="container2">
                   <div className="about-info">
-                    <p><span className="title-s">Name: </span> <span>Asavela Mgidi</span></p>
-                    <p><span className="title-s">Profile: </span> <span>full stack developer</span></p>
-                    <p><span className="title-s">Email: </span> <span>asavelamgidi00@gmail.com</span></p>
-                    <p><span className="title-s">Phone: </span> <span>+27793459109</span></p>
+                    <p><span className="title-s">Name:</span> Asavela Mgidi</p>
+                    <p><span className="title-s">Profile:</span> Full Stack Developer</p>
+                    <p><span className="title-s">Email:</span> asavelamgidi00@gmail.com</p>
+                    <p><span className="title-s">Phone:</span> +27793459109</p>
                   </div>
+                </div>
+                <div>
                   <p className="lead">
-                    I'm Asavela Mgidi, a dedicated software developer that strives for excellence<br />
+                    I'm Asavela Mgidi, a dedicated software developer that strives for excellence.
                     I began my career in the exciting field of software development,
                     which enabled me to pick up knowledge of various programming languages,
-                    including HTML, CSS, JavaScript, Python, and Java. I view coding as
-                    a creative outlet as much as a job, with each line of code telling a tale.
-                    Throughout my career, I've had the privilege of contributing to projects
-                    where we were tasked to design construction websites.
+                    including HTML, CSS, JavaScript, Python, and Java.
+                    I view coding as a creative outlet as much as a job, with each line of code telling a tale.
+                    Throughout my career, I've had the privilege of contributing to projects where we were tasked to design construction websites.
                     My capacity to take on obstacles, work with diverse teams,
                     and provide solutions that have an impact has improved as a result of these experiences.
                     The thrill of using code to transform concepts into reality keeps me going.

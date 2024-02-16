@@ -14,8 +14,8 @@
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    left: 50rem;
-    bottom: 1.5rem;
+    left: 20rem;
+    bottom: 3.5rem;
     
   }
   
@@ -204,4 +204,37 @@
    .fancy:hover .bottom-key-2 {
     right: 0;
     width: 0;
+  }
+
+  .contact-mf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .map-container {
+    margin-bottom: 20px; /* Add some space between map and footer */
+    width: 300px; /* Set a smaller width */
+    height: 200px; /* Set a smaller height */
+    align-self: flex-start; /* Align to the left */
+  }
+  footer {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background: #0062d3;
+    width: 100%;
+  }
+  
+  footer .copyright {
+    margin-bottom: 0.3rem;
+  }
+  
+  footer .credits {
+    margin-bottom: 0;
+  }
+  
+  footer .credits a {
+    color: #fff;
   }

@@ -2,13 +2,15 @@
   float: left; /* Align the image to the left */
   margin-right: 20px; /* Create space between the image and any adjacent content */
 }
-
 .about-img img {
-  width: 150px; /* Set the width of the image */
-  height: 200px; /* Set the height of the image */
+  width: 250px; /* Set the width of the image */
+  height: 300px; /* Set the height of the image */
   object-fit: cover; /* Ensure the image covers the entire container */
   border-radius: 8px; /* Apply rounded corners to the image */
   box-shadow: 0 4px 6px rgba(238, 20, 154, 0.911); /* Add a subtle shadow effect */
+  position: relative;
+  top: 3rem;
+
 }
 
 .lead {
@@ -16,33 +18,43 @@
   font-size: 16px;
   line-height: 1.6;
   color: #741515;
-  border: 1px solid #ccc; /* Add a border for separation */
   border-radius: 5px; /* Add border-radius for rounded corners */
-  background-color: #f9f9f9; /* Add a light background color */
-  box-shadow: 0 2px 5px rgba(238, 20, 154, 0.911); /* Add a subtle shadow */
+  background-color: #0a0a0a; /* Add a light background color */
+  /* box-shadow: 0 2px 5px rgba(238, 20, 154, 0.911); Add a subtle shadow */
   margin-right: 20px;
+  padding: 20px;
+  width: 35rem;
+  position: relative;
+  left: 8rem;
  
 }
+.container2 {
+ position: relative;
+ left: 8rem;
+ left: 3rem;
+ margin: 10px;
 
-.progress-bar {
-    background-color: #9f37b9; /* Change progress bar color */
-    height: 1.2rem; /* Adjust progress bar height */
-  }
-  
-  .progress {
-    background-color: #3e159e;
-  }
+
+}
+
   .about-me {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
   }
-  .title-s {
+  .learn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+  }
+  
+   .title-s {
     font-size: 24px; 
     font-weight:bold; 
     color: #6d0f4d;
-   
   }
   
 
@@ -50,20 +62,6 @@
     color: #9f37b9;
     font-size: 30px;
   }
-  
-  .title-box-2 {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .title-box-2 h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #6d0f4d;
-    font-weight:bold; 
-  }
-  
 
   .about-me p {
     font-size: 1.1rem;
@@ -83,7 +81,8 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     align-items: center;
-    background-color:whitesmoke
+    background-color:black;
+  
   }
   
   .container .about-info p {
@@ -91,6 +90,15 @@
     text-align: left;
     margin-bottom: 10px;
     
+  }
+  .progress-bar {
+    background-color: #9f37b9; /* Change progress bar color */
+    height: 1.2rem; /* Adjust progress bar height */
+    bottom: 14rem;
+  }
+  
+  .progress {
+    background-color: #3e159e;
   }
   
   .skill-mf span {
