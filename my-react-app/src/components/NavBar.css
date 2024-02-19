@@ -1,0 +1,25 @@
+.menu {
+    background-color: #f4f4f4; /* Background color */
+    padding: 20px; /* Padding around the menu */
+}
+
+.menu ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add some space between list items */
+}
+
+.menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color */
+    font-size: 18px; /* Font size */
+}
+
+.menu a:hover {
+    color: #555; /* Text color on hover */
+}

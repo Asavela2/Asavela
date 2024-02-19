@@ -25,13 +25,13 @@ const Home = () => {
         <h4>I'm a passionate <u>software developer</u> from Western Cape</h4>
       </div>
       <div id="navbar" className="navbar">
-        <ul>
-          <li><a className="nav-link active" href="#header">Home</a></li>
-          <li><a className="nav-link active" href="#About">About</a></li>
-          <li><a className="nav-link active" href="#Project">Project</a></li>
-          <li><a className="nav-link active" href="#Contact">Contact</a></li>
-        </ul>
-      </div>
+            <ul>
+                <li><a className="nav-link active" href="#header">Home</a></li>
+                <li><a className="nav-link active" href="#About">About</a></li>
+                <li><a className="nav-link active" href="#Project">Project</a></li>
+                <li><a className="nav-link active" href="#Contact">Contact</a></li>
+            </ul>
+        </div>
 
       {/* Social Links */}
       <div className="social-links" key="social-links">
