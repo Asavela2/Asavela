@@ -4,7 +4,6 @@ import Home from './components/Home';
 import About from'./components/About';
 import Contact from'./components/Contact';
 import Project from'./components/Project';
-import NavBar from './components/NavBar';
 
 const App = () => {
   return (
@@ -13,7 +12,7 @@ const App = () => {
       < About/>
       < Project/>
       < Contact/>
-      <NavBar/>
+    
     </div>
   );
 }

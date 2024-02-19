@@ -10,6 +10,7 @@
   box-shadow: 0 4px 6px rgba(238, 20, 154, 0.911); /* Add a subtle shadow effect */
   position: relative;
   top: 3rem;
+  margin-left: 7rem;
 
 }
 
@@ -18,24 +19,39 @@
   font-size: 16px;
   line-height: 1.6;
   color: #741515;
-  border-radius: 5px; /* Add border-radius for rounded corners */
-  background-color: #0a0a0a; /* Add a light background color */
-  /* box-shadow: 0 2px 5px rgba(238, 20, 154, 0.911); Add a subtle shadow */
-  margin-right: 20px;
+  border-radius: 5px; 
   padding: 20px;
-  width: 35rem;
+  width: 40rem;
   position: relative;
-  left: 8rem;
- 
+  left: 5px;
 }
 .container2 {
  position: relative;
  left: 8rem;
  left: 3rem;
  margin: 10px;
+}
 
+.AboutContainer{
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    color: rgb(151, 20, 112);
+    font-size: 2rem;
+   
+  
+  }
+
+  h4{
+    margin-left: 35rem;
+    color: #9f37b9;
+  }
 
 }
+
 
   .about-me {
     display: flex;
@@ -48,19 +64,12 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-
   }
   
    .title-s {
     font-size: 24px; 
     font-weight:bold; 
     color: #6d0f4d;
-  }
-  
-
-  .title-left{
-    color: #9f37b9;
-    font-size: 30px;
   }
 
   .about-me p {
@@ -112,6 +121,8 @@
     position: relative;
     left: 5rem;
     width: 40rem;
+    margin-left: 20rem;
+    bottom: 4rem;
   }
   .skill-title {
     position: relative;

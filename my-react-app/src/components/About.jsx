@@ -5,25 +5,23 @@ import AsavelaImage from '../components/Asavela.jpg'; // Import the image
 const About = () => {
   return (
     <section id="about" className="about-mf sect-pt4 route">
-      <div className="container">
+      <div className="AboutContainer">
         <h2 className="title-left">About</h2>
-        <h2 className="learn">Learn more about me</h2>
+        <h4 className="learn">Learn more about me</h4>
         <div className="row">
-          <div className="col-md-6">
             <div className="about-img">
               <img src={AsavelaImage} className="img-fluid rounded b-shadow-a" alt="Asavela" />
-            </div>
           </div>
           <div className="col-md-6">
             <div className="box-shadow-full">
               <div className="about-me pt-4 pt-md-0">
                 <div className="container2">
-                  <div className="about-info">
+                  {/* <div className="about-info">
                     <p><span className="title-s">Name:</span> Asavela Mgidi</p>
                     <p><span className="title-s">Profile:</span> Full Stack Developer</p>
                     <p><span className="title-s">Email:</span> asavelamgidi00@gmail.com</p>
                     <p><span className="title-s">Phone:</span> +27793459109</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div>
                   <p className="lead">
