@@ -21,7 +21,7 @@
   color: #741515;
   border-radius: 5px; 
   padding: 20px;
-  width: 40rem;
+  width: 60rem;
   position: relative;
   left: 5px;
 }
@@ -37,10 +37,12 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: -30px;
 
   h2{
     color: rgb(151, 20, 112);
     font-size: 2rem;
+    margin-bottom: -3rem;
    
   
   }
@@ -48,6 +50,8 @@
   h4{
     margin-left: 35rem;
     color: #9f37b9;
+    margin-top: -1rem;
+    margin-left: 10rem;
   }
 
 }
@@ -87,10 +91,10 @@
   
   .container {
     padding: 20px; 
-    border: 1px solid #ccc;
+    border: 1px solid #5e0948;
     border-radius: 10px;
     align-items: center;
-    background-color:black;
+    background-color:rgb(0, 0, 0);
   
   }
   

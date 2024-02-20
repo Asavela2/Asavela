@@ -7,21 +7,6 @@ const Contact = () => {
         <section id="Contact" className="contact-mf sect-pt4 route">
             <h2 className="title-left">Contact me</h2>
             <h1 className="title-left">Get In Touch</h1>
-
-            <div className="map-container">
-                {/* Add your map component here */}
-                <iframe
-                    title="Location Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23574.702618647637!2d-73.98103242600668!3d40.730610570077476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xae2e3c61a04f21b1!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1644971365152!5m2!1sen!2suk"
-                    width="600"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                ></iframe>
-            </div>
-          
-
             <form className="form">
                 <div className="flex">
                     <label>
@@ -57,6 +42,12 @@ const Contact = () => {
                     <span className="bottom-key-2"></span>
                 </button>
             </form>
+            <div className="social-links" key="social-links">
+                                    <a href="https://github.com/Asavela2?tab=repositories" className="github" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                                    <a href="https://www.linkedin.com/in/asavela-mgidi-154884232/" className="linkedin" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+                                    <a href="https://wa.me/+27793459109" className="whatsapp" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+                                    <a href="https://www.instagram.com/asavelamgidi/" className="instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                                </div>
 
             <footer>
                 <div className="container">
@@ -64,12 +55,6 @@ const Contact = () => {
                         <div className="col-sm-12">
                             <div className="copyright-box">
                                 <p className="copyright">&copy; Copyright <strong>Asavela</strong>. All Rights Reserved</p>
-                                <div className="social-links" key="social-links">
-                                    <a href="https://github.com/Asavela2?tab=repositories" className="github" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                                    <a href="https://www.linkedin.com/in/asavela-mgidi-154884232/" className="linkedin" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-                                    <a href="https://wa.me/+27793459109" className="whatsapp" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-                                    <a href="https://www.instagram.com/asavelamgidi/" className="instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-                                </div>
                             </div>
                         </div>
                     </div>

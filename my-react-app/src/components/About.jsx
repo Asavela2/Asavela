@@ -6,8 +6,8 @@ const About = () => {
   return (
     <section id="about" className="about-mf sect-pt4 route">
       <div className="AboutContainer">
-        <h2 className="title-left">About</h2>
-        <h4 className="learn">Learn more about me</h4>
+        <h2 className="title-left">About Me</h2>
+        <h4 className="learn">Learn more...</h4>
         <div className="row">
             <div className="about-img">
               <img src={AsavelaImage} className="img-fluid rounded b-shadow-a" alt="Asavela" />

@@ -2,14 +2,15 @@
 
 .project {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   height: 100vh;
+  background-color: black;
   
 }
 
 .project h2 {
   font-size: 24px;
-  color: #333;
+  color: #810b7b;
   margin-bottom: 20px;
 }
 

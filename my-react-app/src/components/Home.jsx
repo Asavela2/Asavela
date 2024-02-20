@@ -1,46 +1,32 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Home.css';
+import { NavLink } from 'react-router-dom';
 import AsaImage from './Asa.jpg'; // Import the image
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Home = () => {
-  useEffect(() => {
-    // Add Material Icons stylesheet dynamically
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-
-    // Clean up function to remove the added link when the component unmounts
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
-
   return (
-    <div className='home-container' style={{backgroundImage: `url(${AsaImage}) `}}>
+    <div className='home-container' style={{backgroundImage: `url(${AsaImage})`}}>
       <div className="overlay"></div>
       <div className="text-zone">
         <h1>HI, I am Asavela Mgidi</h1>
         <h4>I'm a passionate <u>software developer</u> from Western Cape</h4>
       </div>
-      <div id="navbar" className="navbar">
-            <ul>
-                <li><a className="nav-link active" href="#header">Home</a></li>
-                <li><a className="nav-link active" href="#About">About</a></li>
-                <li><a className="nav-link active" href="#Project">Project</a></li>
-                <li><a className="nav-link active" href="#Contact">Contact</a></li>
-            </ul>
-        </div>
+      <div className="navbar" id="navbar">
+  <ul>
+    <li><NavLink className="nav-link" activeClassName="active" exact to="/">Home</NavLink></li>
+    <li><NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink></li>
+    <li><NavLink className="nav-link" activeClassName="active" to="/project">Project</NavLink></li>
+    <li><NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink></li>
+  </ul>
+</div>
 
-      {/* Social Links */}
-      <div className="social-links" key="social-links">
+      <div className="social-links">
         <a href="https://github.com/Asavela2?tab=repositories" className="github" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
         <a href="https://www.linkedin.com/in/asavela-mgidi-154884232/" className="linkedin" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
         <a href="https://wa.me/+27793459109" className="whatsapp" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
         <a href="https://www.instagram.com/asavelamgidi/" className="instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
       </div>
-
       <div className="button" data-tooltip="Size: 20Mb">
         <div className="button-wrapper">
           <div className="text">Download CV</div>

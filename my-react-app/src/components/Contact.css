@@ -1,34 +1,32 @@
 .title-left {
   font-size: 24px; /* Adjust the font size for h2 */
+  color: darkorchid;
 }
 
 .title-left:first-child {
-  font-size: 2vpx; /* Adjust the font size for h1 */
+  font-size: 1vpx; /* Adjust the font size for h1 */
+  color: darkorchid;
+  font: italic;
 }
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 350px;
-    background-color: #fff;
+    max-width: 450px;
+    background-color: #636060;
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    left: 20rem;
-    bottom: 4rem;
+    left: 3rem;
+    bottom: 0,5rem;
     font-size: 20px;
   
-  }
-  
-  .message {
-    color: rgba(88, 87, 87, 0.822);
-    font-size: 30px;
   }
   
   .flex {
     display: flex;
     width: 100%;
-    gap: 6px;
+    gap: 10px;
   }
   
   .form label {
@@ -98,7 +96,7 @@
   }
   
   .form label .input01:valid + span {
-    color: green;
+    color: rgb(233, 25, 146);
   }
   
   .fancy {
@@ -157,7 +155,7 @@
     top: -2px;
     left: 0.625rem;
     position: absolute;
-    background: white;
+    color: darkorchid;
     transition: width 0.5s ease-out, left 0.3s ease-out;
   }
   
@@ -212,19 +210,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: black;
+    height: 100vh;
+   
   }
   
-  .map-container {
-    margin-bottom: 20px; /* Add some space between map and footer */
-    width: 300px; /* Set a smaller width */
-    height: 200px; /* Set a smaller height */
-    align-self: flex-start; /* Align to the left */
-  }
+  
   footer {
     text-align: center;
-    color: #fff;
+    color: #5957ce;
     padding: 25px 0;
     width: 100%;
+    color: darkorchid;
+    margin-top: 7rem;
     
   }
   
@@ -235,7 +233,57 @@
   footer .credits {
     margin-bottom: 0;
   }
-  
-  footer .credits a {
-    color: #fff;
+  .social-links {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -400px;
+    margin-bottom: -30px;
+
   }
+  
+  /* Style for individual social link icons */
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #fff; 
+    text-decoration: none;
+  }
+  
+  /* Style for the active social link */
+  .social-links a.active {
+    color: #00f;
+  }
+  .social-links {
+    width: 200px; 
+    height: 244px 
+  }
+  
+  .social-links a {
+    color: #333; /* Default color */
+    font-size: 24px; 
+  }
+  
+  .social-links a:hover {
+    color: #007bff; 
+  }
+  
+  /* styles for  icons or classes */
+  .github:hover {
+    color: #211F1F; 
+  }
+  
+  .linkedin:hover {
+    color: #0077b5; 
+  }
+  
+  .whatsapp:hover {
+    color: #25d366;
+  }
+  
+  .instagram:hover {
+    color: #e4405f;
+  }
+  
