@@ -1,13 +1,30 @@
-.about-img {
-  float: left; /* Align the image to the left */
-  margin-right: 20px; /* Create space between the image and any adjacent content */
+.container {
+  padding: 20px;
+  border: 1px solid #5e0948;
+  border-radius: 10px;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+
 }
+
+.about-img {
+  float: left;
+  /* Align the image to the left */
+  margin-right: 20px;
+  /* Create space between the image and any adjacent content */
+}
+
 .about-img img {
-  width: 250px; /* Set the width of the image */
-  height: 300px; /* Set the height of the image */
-  object-fit: cover; /* Ensure the image covers the entire container */
-  border-radius: 8px; /* Apply rounded corners to the image */
-  box-shadow: 0 4px 6px rgba(238, 20, 154, 0.911); /* Add a subtle shadow effect */
+  width: 250px;
+  /* Set the width of the image */
+  height: 300px;
+  /* Set the height of the image */
+  object-fit: cover;
+  /* Ensure the image covers the entire container */
+  border-radius: 8px;
+  /* Apply rounded corners to the image */
+  box-shadow: 0 4px 6px rgba(238, 20, 154, 0.911);
+  /* Add a subtle shadow effect */
   position: relative;
   top: 3rem;
   margin-left: 7rem;
@@ -18,36 +35,31 @@
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #741515;
-  border-radius: 5px; 
+  border-radius: 5px;
   padding: 20px;
   width: 60rem;
   position: relative;
   left: 5px;
 }
-.container2 {
- position: relative;
- left: 8rem;
- left: 3rem;
- margin: 10px;
-}
 
-.AboutContainer{
+.AboutContainer {
   background-color: rgb(0, 0, 0);
   padding: 20px;
   display: flex;
   flex-direction: column;
   margin-bottom: -30px;
 
-  h2{
+  h2 {
+    position: absolute;
     color: rgb(151, 20, 112);
     font-size: 2rem;
     margin-bottom: -3rem;
-   
-  
+    margin-left: 38rem;
+
+
   }
 
-  h4{
+  h4 {
     margin-left: 35rem;
     color: #9f37b9;
     margin-top: -1rem;
@@ -57,85 +69,101 @@
 }
 
 
-  .about-me {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
-  .learn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
-  
-   .title-s {
-    font-size: 24px; 
-    font-weight:bold; 
-    color: #6d0f4d;
-  }
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
 
-  .about-me p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #9f37b9;
-    margin-bottom: 20px;
-    max-width: 700px; 
-    margin-left: auto; 
-    margin-right: 25px;
-    text-align: left;
+.learn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
 
+.title-s {
+  font-size: 24px;
+  font-weight: bold;
+  color: #9f37b9;
+
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #9f37b9;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: 25px;
+  text-align: left;
+
+
+}
+
+
+.container .about-info p {
+  margin: 10px 0;
+  /* Add margin to paragraphs */
+  text-align: left;
+  margin-bottom: 10px;
+
+}
+
+.progress-bar {
+  background-color: #9f37b9;
+  /* Change progress bar color */
+  height: 1.2rem;
+  /* Adjust progress bar height */
+  bottom: 14rem;
+}
+
+.progress {
+  background-color: #3e159e;
+}
+
+.skill-mf span {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+  color: #3e159e;
+}
+
+.skill-mf {
+  position: relative;
+  left: 5rem;
+  width: 40rem;
+  margin-left: 20rem;
+  bottom: 4rem;
+}
+
+.skill-title {
+  position: relative;
+  right: 20rem;
+  top: 1.3rem;
+}
+
+.pull-right {
+  position: relative;
+  left: 18rem;
+  top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .about-img {
+    margin-right: -17px;
+    margin-left: 0rem;
     
   }
-  
-  .container {
-    padding: 20px; 
-    border: 1px solid #5e0948;
-    border-radius: 10px;
-    align-items: center;
-    background-color:rgb(0, 0, 0);
-  
+  .about-img img {
+    width: 200px;
+    height: 200px;
+    right: 8rem;
   }
-  
-  .container .about-info p {
-    margin: 10px 0; /* Add margin to paragraphs */
-    text-align: left;
-    margin-bottom: 10px;
-    
-  }
-  .progress-bar {
-    background-color: #9f37b9; /* Change progress bar color */
-    height: 1.2rem; /* Adjust progress bar height */
-    bottom: 14rem;
-  }
-  
-  .progress {
-    background-color: #3e159e;
-  }
-  
-  .skill-mf span {
-    display: inline-block;
-    width: 80px; 
-    text-align: right; 
-    margin-right: 10px; 
-    color: #3e159e;
-  }
-  .skill-mf {
-    position: relative;
-    left: 5rem;
-    width: 40rem;
-    margin-left: 20rem;
-    bottom: 4rem;
-  }
-  .skill-title {
-    position: relative;
-    right: 20rem;
-    top: 1.3rem;
-  }
-  .pull-right{
-    position: relative;
-    left: 17rem;
-    top: 1.5rem;
-  }
-  
+
+
+}

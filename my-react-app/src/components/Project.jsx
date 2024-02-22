@@ -1,101 +1,72 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Project.css';
-import ProjectImage from '../components/construction-site.jpg'; // Import the image
-import BankingImage from '../components/banking_app.jpg';
-import MetricImage from '../components/Metric-converter.jpg';
-import FinanceImage from '../components/financial calculator.jpg';
+import ProjectImage1 from '../components/construction-site.jpg';
+import ProjectImage2 from '../components/banking_app.jpg';
+import ProjectImage3 from '../components/Metric-converter.jpg';
+import ProjectImage4 from '../components/financial calculator.jpg';
 
 const Project = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const projects = [
+        {
+            title: "Construction-website",
+            image: ProjectImage1,
+            githubLink: 'https://github.com/Asavela2/Construction-website'
+        },
+        {
+            title: "Banking-app",
+            image: ProjectImage2,
+            githubLink: 'https://github.com/Asavela2/Thee-Deciders-Banking-App'
+        },
+        {
+            title: "Metric-converter",
+            image: ProjectImage3,
+            githubLink: 'https://github.com/Asavela2/Metric-Converter'
+        },
+        {
+            title: "Financial-Calculator",
+            image: ProjectImage4,
+            githubLink: 'https://github.com/Asavela2/Financial-Calculator'
+        }
+    ];
+
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide === Math.ceil(projects.length / 2) - 1 ? 0 : currentSlide + 1);
+    };
+
+    const prevSlide = () => {
+        setCurrentSlide(currentSlide === 0 ? Math.ceil(projects.length / 2) - 1 : currentSlide - 1);
+    };
+
     return (
         <section className="project" id='project'>
             <h2>Project</h2>
-            <div className="card">
-                <div className="details-container color-container">
-                    <div className="article-container">
-                        <div>
-                            {/* Assuming projectImage is a variable containing the image */}
-                            <img
-                                src={ProjectImage}
-                                alt="Project2"
-                                className="project-img"
-                            />
-                        </div>
-                    </div>
-                    <h2 className="experience-sub-title project-title">Construction-website</h2>
-                    <div className="btn-container">
-                        <button
-                            className="btn btn-color-2 project-btn"
-                            onClick={() => window.location.href = 'https://github.com/Asavela2/Construction-website'}
-                        >
-                            Github
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div className="card-1">
-                <div className="details-container color-container">
-                    <div className="article-container">
+            <div className="slideshow-container">
+                {projects.slice(currentSlide * 2, currentSlide * 2 + 2).map((project, index) => (
+                    <div className="card" key={index}>
                         <img
-                            src={BankingImage}
-                            alt="Project2"
-                            className="project-img-3"
-                        />
-                    </div>
-                    <h2 className="experience-sub-title project-title">Banking-app</h2>
-                    <div className="btn-container">
-                        <button
-                            className="btn btn-color-2 project-btn"
-                            onClick={() => window.location.href = 'https://github.com/Asavela2/Thee-Deciders-Banking-App'}
-                        >
-                            Github
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div className="card-2">
-                <div className="details-container color-container">
-                    <div className="article-container">
-                        <img
-                            src={MetricImage}
-                            alt="Project2"
+                            src={project.image}
+                            alt={project.title}
                             className="project-img"
                         />
-                    </div>
-                    <h2 className="experience-sub-title project-title">Metric-converter</h2>
-                    <div className="btn-container">
+                        <h2 className="experience-sub-title project-title">{project.title}</h2>
+                        <div className="btn-container">
                         <button
                             className="btn btn-color-2 project-btn"
-                            onClick={() => window.location.href = 'https://github.com/Asavela2/Metric-Converter'}
+                            onClick={() => window.open(project.githubLink, "_blank")}
                         >
                             Github
                         </button>
+
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
-            <div className="card-3">
-                <div className="details-container color-container">
-                    <div className="article-container">
-                        <img
-                            src={FinanceImage}
-                            alt="Project2"
-                            className="project-img-2"
-                        />
-                    </div>
-                    <h2 className="experience-sub-title project-title">Financial-Calculator</h2>
-                    <div className="btn-container">
-                        <button
-                            className="btn btn-color-2 project-btn"
-                            onClick={() => window.location.href = 'https://github.com/Asavela2/Financial-Calculator' }
-                        >
-                            Github
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <button onClick={prevSlide}>Previous</button>
+            <button onClick={nextSlide}>Next</button>
         </section>
     );
 }
 
 export default Project;
-
-

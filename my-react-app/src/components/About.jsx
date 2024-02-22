@@ -15,14 +15,6 @@ const About = () => {
           <div className="col-md-6">
             <div className="box-shadow-full">
               <div className="about-me pt-4 pt-md-0">
-                <div className="container2">
-                  {/* <div className="about-info">
-                    <p><span className="title-s">Name:</span> Asavela Mgidi</p>
-                    <p><span className="title-s">Profile:</span> Full Stack Developer</p>
-                    <p><span className="title-s">Email:</span> asavelamgidi00@gmail.com</p>
-                    <p><span className="title-s">Phone:</span> +27793459109</p>
-                  </div> */}
-                </div>
                 <div>
                   <p className="lead">
                     I'm Asavela Mgidi, a dedicated software developer that strives for excellence.
@@ -40,16 +32,16 @@ const About = () => {
               <div className="skill-mf">
                 <p className="title-s">Skills</p>
                 <div className="skill">
-                  <span className="skill-title">HTML</span> <span className="pull-right">85%</span>
+                  <span className="skill-title">HTML</span> <span className="pull-right">75%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '85%' }} data-progress="85%"></div>
+                    <div className="progress-bar" style={{ width: '85%' }} data-progress="75%"></div>
                   </div>
                 </div>
 
                 <div className="skill">
-                  <span className="skill-title">CSS</span> <span className="pull-right">75%</span>
+                  <span className="skill-title">CSS</span> <span className="pull-right">65%</span>
                   <div className="progress">
-                    <div className="progress-bar" style={{ width: '75%' }} data-progress="75%"></div>
+                    <div className="progress-bar" style={{ width: '75%' }} data-progress="65%"></div>
                   </div>
                 </div>
 

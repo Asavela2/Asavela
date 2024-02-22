@@ -1,3 +1,5 @@
+/* Default styles */
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -7,228 +9,225 @@
   background-color: #f0f0f0;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0,5);
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  }
-
-  .text-zone {
-    text-align: center;
-    color: rgb(134, 25, 89);
-    margin-left: -800px;
-    margin-top: 150px;
-  }
-  
-.navbar {
-  margin-top: 20px;
+.text-zone {
+  text-align: center;
+  color: darkorchid;
   margin-left: -800px;
-  margin-top: 5px;
-  /* border: 2px solid; */
+  margin-top: 150px;
+}
+
+.navbar {
+  padding: 10px;
 }
 
 .navbar ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .navbar ul li {
   display: inline;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
-.navbar ul li a {
+.nav-link {
   text-decoration: none;
-  color: hsl(0, 0%, 100%);
-  font-size: 20px;
-  transition: color 0.3s; /* Smooth transition for color change */
+  color: white;
+  font-size: 18px;
 }
 
-.navbar ul li a.active {
+.nav-link:hover {
+  color: #ccc;
+}
+
+.active {
   font-weight: bold;
 }
 
-.navbar ul li a:hover {
-  color: #ffc107; /* Color of the links on hover */
-}.active {
-  font-weight: bold;
-  color: red; /* Change this to your desired active link color */
-}
-
-
-/* Style for the social links container */
 .social-links {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: -400px;
-    margin-bottom: -30px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -400px;
+  margin-bottom: -30px;
+  width: 200px;
+  height: 244px;
+}
 
-  }
-  
-  /* Style for individual social link icons */
-  .social-links a {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 24px;
-    color: #fff; 
-    text-decoration: none;
-  }
-  
-  /* Style for the active social link */
-  .social-links a.active {
-    color: #00f;
-  }
-  .social-links {
-    width: 200px; 
-    height: 244px 
-  }
-  
-  .social-links a {
-    color: #333; /* Default color */
-    font-size: 24px; 
-  }
-  
-  .social-links a:hover {
-    color: #007bff; 
-  }
-  
-  /* styles for  icons or classes */
-  .github:hover {
-    color: #211F1F; 
-  }
-  
-  .linkedin:hover {
-    color: #0077b5; 
-  }
-  
-  .whatsapp:hover {
-    color: #25d366;
-  }
-  
-  .instagram:hover {
-    color: #e4405f;
-  }
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
 
-  .button {
-    --width: 100px;
-    --height: 35px;
-    --tooltip-height: 35px;
-    --tooltip-width: 90px;
-    --gap-between-tooltip-to-button: 18px;
-    --button-color: #422d40;
-    --tooltip-color: #fff;
-    width: var(--width);
-    height: var(--height);
-    background: var(--button-color);
-    position: relative;
-    text-align: center;
-    border-radius: 0.45em;
-    font-family: "Arial";
-    transition: background 0.3s;
-    margin-top: 100px;
-  }
-  
-  .button::before {
-    position: absolute;
-    content: attr(data-tooltip);
-    width: var(--tooltip-width);
-    height: var(--tooltip-height);
-    background-color: var(--tooltip-color);
-    font-size: 0.9rem;
-    color: #111;
-    border-radius: .25em;
-    line-height: var(--tooltip-height);
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-    left: calc(50% - var(--tooltip-width) / 2);
-  }
-  
-  .button::after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: var(--tooltip-color);
-    left: calc(50% - 10px);
-    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-  }
-  
-  .button::after,.button::before {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s;
-  }
-  
-  .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .button-wrapper,.text,.icon {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    color: #fff;
-  }
-  
-  .text {
-    top: 0
-  }
-  
-  .text,.icon {
-    transition: top 0.5s;
-  }
-  
-  .icon {
-    color: #fff;
-    top: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .icon svg {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .button:hover {
-    background: #49082c;
-  }
-  
-  .button:hover .text {
-    top: -100%;
-  }
-  
-  .button:hover .icon {
-    top: 0;
-  }
-  
-  .button:hover:before,.button:hover:after {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .button:hover:after {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-  }
-  
-  .button:hover:before {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-  }
-  
-  
+.social-links a.active {
+  color: #00f;
+}
+
+.social-links a {
+  color: darkorchid;
+  font-size: 24px;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.github:hover {
+  color: #211f1f;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.whatsapp:hover {
+  color: #25d366;
+}
+
+.instagram:hover {
+  color: #e4405f;
+}
+
+.button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #422d40;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  margin-top: 100px;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: 0.25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,
+.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,
+.text,
+.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0;
+}
+
+.text,
+.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: #4575dd;
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,
+.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+ .text-zone{
+  margin-left: -2px;
+ }
+ .social-links{
+  margin-left: -2px;
+ }
+
+}
