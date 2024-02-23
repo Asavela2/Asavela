@@ -1,12 +1,12 @@
 .title-left {
   font-size: 24px; 
-  color: darkorchid;
+  color: royalblue;
 
 }
 
 .title-left:first-child {
   font-size: 1vpx; 
-  color: darkorchid;
+  color: royalblue;
   font: italic;
 
 }
@@ -27,7 +27,7 @@
     color: #5957ce;
     padding: 25px 0;
     width: 100%;
-    color: darkorchid;
+    color: white;
     margin-bottom: 7rem;
     
   }
@@ -83,12 +83,12 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: #c436a0;
+    background-color:rgb(218, 56, 110)
   }
   
   .message {
     font-size: 14.5px;
-    color: rgba(167, 17, 134, 0.7);
+    color: white;
   }
   
   .signin {
@@ -124,7 +124,7 @@
   }
   
   .form label .input + span {
-    color:  #a942c9;
+    color:  white;
     position: absolute;
     left: 10px;
     top: 0px;

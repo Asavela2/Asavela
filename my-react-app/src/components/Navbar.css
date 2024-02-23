@@ -4,19 +4,22 @@
     left: 10;
     width: 100%;
     padding: 10px 20px; 
-    margin-top: 400px;
-    margin-left: -400px;
+    margin-top: 450px;
+    margin-left: -450px;
+    
   }
   
   .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
+
   }
   
   .menu ul li {
     display: inline;
     margin-right: 20px;
+    
   }
   
   .menu ul li:last-child {
@@ -24,12 +27,17 @@
   }
   
   .menu ul li a {
-    color: white; 
+    color: white;
     text-decoration: none;
   }
   
   .menu ul li a:hover {
     text-decoration: none; 
-    color: darkorchid;
+    color: royalblue;
   }
-  
+  @media screen and (max-width: 768px) {
+    .menu{
+      margin-top: 258px;
+      margin-left: -26px;
+    }
+  }

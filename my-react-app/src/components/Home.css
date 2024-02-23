@@ -22,7 +22,7 @@
 
 .text-zone {
   text-align: center;
-  color: darkorchid;
+  color: white;
   margin-left: -800px;
   margin-top: 150px;
 }
@@ -61,10 +61,11 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  margin-left: -400px;
-  margin-bottom: -30px;
+  margin-left: -450px;
+  margin-bottom: -10px;
   width: 200px;
   height: 244px;
+  
 }
 
 .social-links a {
@@ -80,7 +81,7 @@
 }
 
 .social-links a {
-  color: darkorchid;
+  color: white;
   font-size: 24px;
 }
 
@@ -110,7 +111,7 @@
   --tooltip-height: 35px;
   --tooltip-width: 90px;
   --gap-between-tooltip-to-button: 18px;
-  --button-color: #422d40;
+  --button-color: #6462e6;
   --tooltip-color: #fff;
   width: var(--width);
   height: var(--height);
@@ -229,5 +230,4 @@
  .social-links{
   margin-left: -2px;
  }
-
-}
+} 

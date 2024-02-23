@@ -1,6 +1,11 @@
 import React from 'react';
 import './About.css';
 import AsavelaImage from '../components/Asavela.jpg'; // Import the image
+import { animateScroll as scroll } from 'react-scroll';
+
+const scrollToTop = () => {
+  scroll.scrollToTop(); // Scrolls to the top of the page
+};
 
 const About = () => {
   return (
@@ -9,8 +14,8 @@ const About = () => {
         <h2 className="title-left">About Me</h2>
         <h4 className="learn">Learn more...</h4>
         <div className="row">
-            <div className="about-img">
-              <img src={AsavelaImage} className="img-fluid rounded b-shadow-a" alt="Asavela" />
+          <div className="about-img">
+            <img src={AsavelaImage} className="img-fluid rounded b-shadow-a" alt="Asavela" />
           </div>
           <div className="col-md-6">
             <div className="box-shadow-full">
@@ -37,41 +42,43 @@ const About = () => {
                     <div className="progress-bar" style={{ width: '85%' }} data-progress="75%"></div>
                   </div>
                 </div>
-
                 <div className="skill">
                   <span className="skill-title">CSS</span> <span className="pull-right">65%</span>
                   <div className="progress">
                     <div className="progress-bar" style={{ width: '75%' }} data-progress="65%"></div>
                   </div>
                 </div>
-
                 <div className="skill">
                   <span className="skill-title">JavaScript</span> <span className="pull-right">60%</span>
                   <div className="progress">
                     <div className="progress-bar" style={{ width: '60%' }} data-progress="60%"></div>
                   </div>
                 </div>
-
                 <div className="skill">
                   <span className="skill-title">Java</span> <span className="pull-right">60%</span>
                   <div className="progress">
                     <div className="progress-bar" style={{ width: '60%' }} data-progress="60%"></div>
                   </div>
                 </div>
-
                 <div className="skill">
                   <span className="skill-title">Python</span> <span className="pull-right">65%</span>
                   <div className="progress">
                     <div className="progress-bar" style={{ width: '65%' }} data-progress="65%"></div>
                   </div>
                 </div>
-
                 <div className="skill">
                   <span className="skill-title">Figma</span> <span className="pull-right">75%</span>
                   <div className="progress">
                     <div className="progress-bar" style={{ width: '75%' }} data-progress="75%"></div>
                   </div>
                 </div>
+                <button className="back-to-top-button" onClick={scrollToTop}>
+          <svg className="svgIcon" viewBox="0 0 384 512">
+            <path
+              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+          </svg>
+        </button>
               </div>
             </div>
           </div>
@@ -82,3 +89,4 @@ const About = () => {
 }
 
 export default About;
+

@@ -9,7 +9,7 @@
 
 .project h2 {
     font-size: 24px;
-    color: #810b7b;
+    color: royalblue;
     margin-bottom: 20px;
 }
 
@@ -22,7 +22,7 @@
 .card {
     width: 45%; 
     margin: 60px;
-    background-color: darkorchid;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -83,3 +83,10 @@ button:hover {
     background-color: darkorchid
 }
 
+@media screen and (max-width: 768px){
+    .card {
+        margin-left: 32px;     
+        margin-right: 7px;
+    }
+    
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-dom
 import AsaImage from './Asa.jpg'; 
 import AsaResume from './Asavela-Mgidi resume.pdf';
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram } from "react-icons/fa";

@@ -1,6 +1,6 @@
 .container {
   padding: 20px;
-  border: 1px solid #5e0948;
+  border: 1px solid royalblue;
   border-radius: 10px;
   align-items: center;
   background-color: rgb(0, 0, 0);
@@ -9,22 +9,15 @@
 
 .about-img {
   float: left;
-  /* Align the image to the left */
   margin-right: 20px;
-  /* Create space between the image and any adjacent content */
 }
 
 .about-img img {
   width: 250px;
-  /* Set the width of the image */
   height: 300px;
-  /* Set the height of the image */
   object-fit: cover;
-  /* Ensure the image covers the entire container */
   border-radius: 8px;
-  /* Apply rounded corners to the image */
-  box-shadow: 0 4px 6px rgba(238, 20, 154, 0.911);
-  /* Add a subtle shadow effect */
+  box-shadow: 0 4px 6px rgba(51, 62, 212, 0.911);
   position: relative;
   top: 3rem;
   margin-left: 7rem;
@@ -51,7 +44,6 @@
 
   h2 {
     position: absolute;
-    color: rgb(151, 20, 112);
     font-size: 2rem;
     margin-bottom: -3rem;
     margin-left: 38rem;
@@ -61,7 +53,7 @@
 
   h4 {
     margin-left: 35rem;
-    color: #9f37b9;
+    color:  white;
     margin-top: -1rem;
     margin-left: 10rem;
   }
@@ -86,14 +78,14 @@
 .title-s {
   font-size: 24px;
   font-weight: bold;
-  color: #9f37b9;
+  color: royalblue;
 
 }
 
 .about-me p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #9f37b9;
+  color:white;
   margin-bottom: 20px;
   max-width: 700px;
   margin-left: auto;
@@ -106,22 +98,19 @@
 
 .container .about-info p {
   margin: 10px 0;
-  /* Add margin to paragraphs */
   text-align: left;
   margin-bottom: 10px;
 
 }
 
 .progress-bar {
-  background-color: #9f37b9;
-  /* Change progress bar color */
+  background-color: royalblue;
   height: 1.2rem;
-  /* Adjust progress bar height */
   bottom: 14rem;
 }
 
 .progress {
-  background-color: #3e159e;
+  background-color:white;
 }
 
 .skill-mf span {
@@ -129,7 +118,7 @@
   width: 80px;
   text-align: right;
   margin-right: 10px;
-  color: #3e159e;
+  color: royalblue
 }
 
 .skill-mf {
@@ -151,19 +140,78 @@
   left: 18rem;
   top: 1.5rem;
 }
-
 @media screen and (max-width: 768px) {
-
   .about-img {
-    margin-right: -17px;
-    margin-left: 0rem;
-    
+    float: none;
+    margin-right: 0;
+    margin-left: auto;
   }
+  .skill-mf{
+    text-align: left;
+}
   .about-img img {
-    width: 200px;
-    height: 200px;
-    right: 8rem;
+    width: 150px;
+    height: 150px;
+    margin-left: -150px;
+    margin-right: auto;
+    display: left;
   }
 
+  .AboutContainer h2,
+  .AboutContainer h4 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 
+  .lead {
+    width: auto;
+    margin: 0 auto;
+    top: 47px;
+  }
+
+  .skill-mf {
+    position: relative;
+    left: auto;
+    width: auto;
+    margin: 0 auto;
+    bottom: 0;
+  }
+
+  .skill-title {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+
+  .pull-right {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+.back-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-top-button:hover {
+  background-color: #0056b3;
+}
+
+.svgIcon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
 }
